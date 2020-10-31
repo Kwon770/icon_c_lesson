@@ -4,23 +4,25 @@
 int main() {
 	// mission 1
 	int A, B;
-	
+
 	for (int i = 0;; i++) {
 		scanf("%d %d", &A, &B);
-		
+
 		if (A == 0 || B == 0) {
 			break;
 		}
-		
-		printf("%d\n", A + B);
+		else
+			printf("%d\n", a + b);
+
 	}
 	
 	// mission 2
 	int n;
 	scanf("%d", &n);
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 1; i < 10; i++) {
 		printf("%d * %d = %d\n", n, i, n * i);
+		return 0;
 	}
 
 	// missino 3
@@ -39,11 +41,9 @@ int main() {
 	else if (x > 0 && y < 0) {
 		quadrant = 3;
 	}
-	else if (x < 0 && y < 0) {
+	else {
 		quadrant = 4;
 	}
-	else
-		printf("어떤 사분면에도 속하지 않음");
 
 	printf("%d\n", quadrant);
 
@@ -67,11 +67,16 @@ int main() {
 	int h, m;
 	scanf("%d %d", &h, &m);
 
-	if (m >= 45) {
-		printf("%d %d\n", h, m - 45);
+	if (h == 0 && m < 45);
+	printf("23 %d", m + 15)
+	else
+	{
+		if (m >= 45) {
+			printf("%d %d\n", h, m - 45);
+		}
+		else {
+			printf("%d %d\n", h - 1, m + 15);
+		}
+		return 0;
 	}
-	else {
-		printf("%d %d\n", h - 1, m + 15);
-	}
-	return 0;
 }
